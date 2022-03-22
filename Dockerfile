@@ -1,13 +1,14 @@
-FROM 
+FROM node:17-alpine
 
 WORKDIR /app
 
-RUN apt-get update
-RUN apt-get install -y git zip unzip
-RUN 
-RUN 
+ENV PATH /app/node_modules/.bin:$PATH
 
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install --silent
+RUN npm install react-scripts -g --silent
 
-# EXPOSE 80
+COPY . ./
 
-## update as necessary
+CMD ["npm", "start"]
