@@ -1,11 +1,11 @@
 import { Heading } from "@chakra-ui/react"
 import logo from './../../UI/placeholder_logo.png';
 
-export const Logo = () => {
+export const Logo: () => JSX.Element = () => {
     return (
         <>
-            <img src={logo} alt="logo" />
-            <Heading
+            <img src={logo} alt="Site logo" />
+            <Heading as={'div'}
                 textDecor={"underline"}
                 textUnderlineOffset=".2em"
                 textDecorationColor={"tomato"}
