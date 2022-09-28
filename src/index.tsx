@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { mode } from "@chakra-ui/theme-tools";
 
+//TODO: Refactor and refine colours to be more basic and shorter in number
+
 const colors = {
   blue: {
     ['100']: '#CAF0F8',
@@ -18,7 +20,7 @@ const colors = {
     ['800']: '#023E8A',
     ['900']: '#03045E'
   },
-  green:{
+  green: {
     // ['000']:['#92E6A7'], //granny smith apple
     ['100']: '#B7EFC5',
     ['200']: '#6EDE8A',
@@ -41,7 +43,7 @@ const colors = {
     ['800']: '#14746F',
     ['900']: '#036666'
   },
-  gray:{
+  gray: {
     ['100']: '#dfd9d3',
     ['200']: '#cbc5c0',
     ['300']: '#b9b3af',
@@ -52,7 +54,7 @@ const colors = {
     ['800']: '#73706d',
     ['900']: '#696663'
   },
-  burgundy:{
+  burgundy: {
     ['100']: '#ffccd5',
     ['200']: '#ffb3c1',
     ['300']: '#ff8fa3',
@@ -63,7 +65,7 @@ const colors = {
     ['800']: '#800f2f',
     ['900']: '#590d22'
   },
-  grayBlue:{
+  grayBlue: {
     ['100']: '#979dac',
     ['200']: '#7d8597',
     ['300']: '#5c677d',
@@ -78,7 +80,7 @@ const colors = {
 }
 
 const theme = extendTheme({
-  colors:{
+  colors: {
     brand: colors.blue,
     ...colors
   },
